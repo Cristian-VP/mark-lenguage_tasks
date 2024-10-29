@@ -1,0 +1,178 @@
+/*RESET*/
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*VARIABLES*/
+:root {
+    --h1-color:blue;
+    --h2-color:red;
+    --color-text:#1a2354;
+    --margin-color: lightyellow;
+    --padding-color: lightpurple;
+    --border-color: lightblue;
+    --background-color-gray:lightgray;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;,;
+}
+
+h1{
+    color: var(--h1-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+}
+
+h2{
+    color: var(--h2-color);
+}
+
+/*HEADER*/
+#header-container{
+    margin: 20px 20px;
+    /*background-color: var(--margin-color);*/
+}
+
+#header-container div{
+    margin:0 20px 0 20px;
+    background-color: var(--padding-color);
+    display: inline-block;
+}
+
+#header-container div ~ div{
+    padding-left: 1200px;
+}
+
+#header-container div a[target="_blank"]{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+#header-container div a[target="_blank"]:hover{
+    text-decoration:underline;
+    text-decoration-color: var(--border-color);
+}
+
+#header-container div button{
+    width: 130px;
+    margin: 10px 10px;
+    padding: 20px 20px;
+    border: 3px solid var(--color-text);
+    border-radius: 20px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+#boton-unico:hover{
+    background-color: dodgerblue;
+    color: antiquewhite;
+    border: none;
+}
+
+/****  FIN HEADER *****/
+
+
+/**** MAIN ****/
+#main-texto{
+
+    margin-top: 80px;
+    padding: 20px 20px;
+    height: 25em;
+}
+
+#main-texto > div > h2 > span::after{
+    content: 'SIEMPRE';
+
+    color: var(--color-text);
+    text-decoration: line-through;
+    background-color: lightgoldenrodyellow;
+    font-size: 40px;
+}
+/** ARTICLE TEXTO **/
+#main-texto div{
+    display: inline-block;
+    width: 900px;
+    height: auto;
+}
+#main-texto h2{
+    font-size: 90px;
+    text-wrap: wrap;
+}
+#main-texto div ~ div {
+    margin-top: 30px;
+}
+#main-texto div ~ div > p span::after{
+    content: '->' ;
+    text-decoration: underline dotted;
+
+}
+
+/** ARTICLE TARJETAS **/
+
+#main-articles-container{
+    height: auto;
+    }
+.main-tarjetas-container{
+    width: 100%;
+    height: auto;
+    margin: 0 20px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.tarjeta-container{
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    margin-top: 80px;
+
+}
+
+    /*Imágen tarjeta*/
+    .img-tarjeta{
+        padding: 10px 30px;
+        height: 270px;
+    }
+    .img-tarjeta  > figure img{
+
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    /*Texto tarjeta*/
+    .texto-tarjeta{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .texto-tarjeta div:nth-child(1){
+        text-align: center;
+        text-transform: uppercase;
+        font-style: oblique;
+    }
+    .texto-tarjeta div:nth-child(4){
+        margin-top: 20px;
+        padding: 10px 75px;
+        height: 50px;
+    }
+    .boton-blau{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        appearance: none;
+        border: var(--border-color) solid 2.5px;
+        border-radius: 30px;
+    }
+
+    .boton-blau:hover{
+        color: antiquewhite;
+        border: none;
+        background-color: dodgerblue;
+    }
+
+/**** FIN MAIN ****/
