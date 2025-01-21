@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="icon" href="assets/images/rex.gif" type="image/gif">
+    <title>JS tasks</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h3>1 - Escriu un programa que mostri els números del 10 a l’1 en la consola (console.log) i a la pàgina
+                web:
+            </h3>
+            <p id="resultado-1"></p>
+        </section>
+        <section>
+            <h3>
+                2 / 3 - Escriu amb un programa que demani dos números i mostri el més gran y la suma de ambos en la consola
+                console.log) i a la pàgina web (document.write).
+            </h3>
+            <label>
+                Escribe dos números
+                <input type="text"  id="task-2-1" min="1" max="2" oninput="number1(this.value)">
+                <input type="text"  id="task-2-2" min="1" max="2" oninput="number2(this.value)">
+            </label>
+            <p id="resultado-2"></p>
+            <p id="resultado-3"></p>
+        </section>
+        <section>
+            <h3>
+                4- Escriu un programa que demani el teu nom, la teva edat, la teva estatura i el teu estat civil
+                (casat o solter). Després ha de mostrar aquestes dades en una mateixa línia si l'estat civil és
+                casat, i en columna si l'estat civil és solter. (resultat per consola i a la pàgina web
+                (document.write)).
+            </h3>
+            <form>
+                <label for="estado">
+                    Estado Civil
+                    <select name="estado" id="estado" onchange="dataUser(this.value)">
+                        <option value=""disabled selected>-- Elige una opción --</option>
+                        <option value="Casado">Casado</option>
+                        <option value="Soltero">Soltero</option>
+                    </select>
+                </label>
+                <label for="nombre">
+                    Nombre
+                    <input type="text" id="nombre" onchange="dataUser(this.value)">
+                </label>
+                <label for="edad">
+                    Edad
+                    <input type="text" id="edad" minlength="2" max="10" onchange="dataUser(this.value)">
+                </label>
+                <label for="estatura">
+                    Estatura
+                    <input type="text" id="estatura" onchange="dataUser(this.value)">
+                </label>
+            </form>
+            <p id="resultado-4"></p>
+        </section>
+        <section>
+            <h3>5- Escriu un programa que demani una paraula i retorni el nombre de caràcters que té la paraula.</h3>
+            <label for="word">
+                Escribe una palabra
+                <input type="text" id="word" onchange="userLength(this.value)">
+            </label>
+            <p id="resultado-5"></p>
+        </section>
+        <section>
+            <h3>6- Crea un programa que guardi dins d'un array els dotze mesos de l'any i després escrigui
+                aquests mesos en la consola (console.log) i a la pàgina web (document.write).
+            </h3>
+            <p id="resultado-6"></p>
+        </section>
+        <section>
+            <h3>7- Escriu un programa que demani un nota (numèrica), i retorni un missatge de valoració de cada
+                nota, per exemple: Si s'introdueix un 3, es pot mostrar el missatge en la consola: «la nota 3 és
+                molt insuficient», si s'introdueix un 7, el missatge podria ser: «El 7 és un notable baix», etc.
+            </h3>
+            <label for="nota">
+                Nota:
+                <input type="text" id="nota" onchange="noteExam(this.value)">
+            </label>
+            <p id="resultado-7"></p>
+        </section>
+        <section>
+            <h3>8- Crea un programa per saber si un número (demanat prèviament), és imparell o parell. S’ha de
+                poder demanar tants de números com l’usuari vulgui.</h3>
+            <label for="odd">
+                Escribe un numero:
+                <input type="text" id="odd" onchange="document.getElementById('resultado-8').textContent = (this.value % 2 == 0) ? 'El numero es par': 'El numero es impar'">
+            </label>
+            <p id="resultado-8"></p>
+        </section>
+        <section>
+            <h3> 9- Crea un programa que donada una cadena de text, mostri en la consola el text de manera
+                inversa.</h3>
+            <label for="reverse">
+                Escribe una palabra:
+                <input type="text" id="reverse" onchange="document.getElementById('resultado-9').textContent = `Tu palabra ${this.value}, en espejo: ${this.value.split('').reverse().join('')}`">
+            </label>
+            <p id="resultado-9"></p>
+        </section>
+        <section>
+            <h3>10- Crea un programa que crei un objecte “Persona”, amb les propietats «nom», «edat» i
+                «telèfon». Després ha d’imprimir totes les dades per consola (console.log) i a la pàgina web
+                (document.write).</h3>
+            <p id="resultado-10"></p>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
