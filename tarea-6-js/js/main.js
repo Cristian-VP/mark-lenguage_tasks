@@ -50,7 +50,7 @@ function dataUser(data){
     }else if(document.getElementById('estado').value === 'Soltero'){
         userState += data+"<br>";
     }
-    ejercicio4.textContent = userState;
+    ejercicio4.innerHTML = userState;
 }
 
 /* Ejercicio 5 */
