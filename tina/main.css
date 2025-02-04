@@ -35,15 +35,22 @@ nav ul li a {
 main {
     flex: 1;
     padding: 20px;
+    background-color: antiquewhite;
 }
 
 section {
+    background-color: aquamarine;
     margin-bottom: 20px;
 }
 
 footer {
+    display: flex;
     background: #333;
     color: white;
     padding: 10px;
     text-align: center;
 }
+
+
+
+

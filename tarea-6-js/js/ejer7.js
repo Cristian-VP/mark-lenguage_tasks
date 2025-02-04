@@ -117,13 +117,41 @@ ejer8.innerHTML = (userWin) ? "Has vencido a la máquina" : "Te has quedado sin 
 /* Ejercicio 9
 const bodyMonsterUgly = ["pies","pies","piernas","pies","piernas","cuerpo","cabeza","cuernos","cuerpo","cuernos"];
 const ejer9 = document.getElementById('ej7-9');
+
 let niceBodyMonster = bodyMonsterUgly.filter((piece, i) => {
     return bodyMonsterUgly.indexOf(piece) === i;
 });
 ejer9.innerHTML = `Mi Array es: ${bodyMonsterUgly}. Eliminando sus partes repetidas: ${niceBodyMonster}`;
 console.log(niceBodyMonster);
-*/
-
+ */
 /* Ejercicio 10
     Ver ejercicio 8
  */
+
+/* Ejercicio 10 ultimo pdf */
+/*
+Diseña una función que aplique descuentos a los precios de los coches en stock de la
+empresa. Crea un formulario en el que el usuario pueda visualizar los vehículos
+disponibles junto con sus precios. La función debe calcular el descuento según la marca
+del coche:
+• Ford: 10% de descuento.
+• Seat: 8% de descuento.
+• Citroën: 6% de descuento.
+• Audi: 4% de descuento.
+* */
+
+const parkCars = ["f","f","f","f","f","s","s","c","a","s","a","f","c","a","a","f","c","s"];
+
+function setCars(car){
+    const ej10Result = document.querySelector();
+    let availableCars = new Map();
+    let numberKindOfCar;
+
+    for(let car of parkCars){
+        availableCars.set(car, (availableCars.get(car) === undefined) ? 0 : availableCars.get(car) + 1);
+    }
+    numberKindOfCar = availableCars.get(car);
+
+}
+
+setCars();
