@@ -128,30 +128,3 @@ console.log(niceBodyMonster);
     Ver ejercicio 8
  */
 
-/* Ejercicio 10 ultimo pdf */
-/*
-Diseña una función que aplique descuentos a los precios de los coches en stock de la
-empresa. Crea un formulario en el que el usuario pueda visualizar los vehículos
-disponibles junto con sus precios. La función debe calcular el descuento según la marca
-del coche:
-• Ford: 10% de descuento.
-• Seat: 8% de descuento.
-• Citroën: 6% de descuento.
-• Audi: 4% de descuento.
-* */
-
-const parkCars = ["f","f","f","f","f","s","s","c","a","s","a","f","c","a","a","f","c","s"];
-
-function setCars(car){
-    const ej10Result = document.querySelector();
-    let availableCars = new Map();
-    let numberKindOfCar;
-
-    for(let car of parkCars){
-        availableCars.set(car, (availableCars.get(car) === undefined) ? 0 : availableCars.get(car) + 1);
-    }
-    numberKindOfCar = availableCars.get(car);
-
-}
-
-setCars();

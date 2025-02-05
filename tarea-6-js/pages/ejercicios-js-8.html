@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="../assets/style/main.css">n
+    <title>JavaScript III (DOM)</title>
+</head>
+<body>
+  <header>
+    <h1>JavaScript III (DOM)</h1>
+  </header>
+  <main>
+    <h2>Ejercios 2 - 3 - 4</h2>
+    <section id="ejer2-result">
+      <div></div>
+      <p></p>
+      <button>Set color</button>
+      <button>Reset color</button>
+    </section>
+    <section id="ej3-result">
+      <h2>Ejercio 5</h2>
+      <p>Aquesta web té molts d'enllaços</p>
+      <ul>
+        <lh>Alguns ens permeten anar a pàgines de cercadors com:</lh>
+        <li><a href="https://www.google.es">Google</a></li>
+        <li><a href="https://www.bing.com">Bing</a></li>
+        <li><a href="https://duckduckgo.com/">Duck Duck Go</a><li>
+      </ul>
+      <p>També hi ha enllaços a altres web molt interessants</p>
+      <ul>
+        <lh>Per exemple:</lh>
+        <li><a href="https://www.travelbelize.org/">Belice</a></li>
+        <li><a href="https://vr.wowhungary.com/en/map/">Hungria</a></li>
+      </ul>
+      <p></p>
+      <button>Show URL`s</button>
+    </section>
+    <h2>Ejercio 6</h2>
+    <section id="ej4-result">
+      <p id="hidde">"El router es el dispositivo que nos permite conectarnos y navegar por Internet.
+        Configurarlo de manera correcta evitará nuestra privacidad y seguridad», explican
+        desde INCIBE a este respecto. De acuerdo con la institución, lo primero que
+        debemos hacer cuando adquirimos un router nuevo es revisar su configuración
+        para comprobar si es suficientemente segura. Para ello debemos coger la dirección
+        IP del dispositivo y ponerla en el navegador que queramos, ya sea Chrome, Safari
+        o cualquier otro.."</p>
+      <p>Internet es una de las herramientas más importantes que tiene la sociedad para
+        mantenerse en contacto con los demás en tiempos de pandemia. Sin embargo,
+        para no correr ningún riesgo, es importante que el usuario conozca bien el
+        funcionamiento de su router: ese dispositivo con forma de caja que te permite
+        conectarte a la red gracias al WiFi. Con el fin de que seamos capaces de conocer
+        su funcionamiento, y de protegernos de cualquier ataque o intento de robo, el
+        Instituto Nacional de Ciberseguridad (INCIBE) ha compartido una guía los pasos
+        que los usuarios deben dar para convertir su conexión en una fortaleza.</p>
+
+    </section>
+    <h2>Ejercios 7 - 8</h2>
+    <section id="ej7-8">
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <h2>Ejercio 9</h2>
+    <section id="ej9-result">
+      <ul>
+        <li>
+          <p>María</p>
+          <button onclick="deleteNode(this)">X</button>
+        </li>
+        <li>
+          <p>Lolita</p>
+          <button onclick="deleteNode(this)">X</button>
+        </li>
+        <li>
+          <p>Puka-ni-chi</p>
+          <button onclick="deleteNode(this)">X</button>
+        </li>
+      </ul>
+      <button onclick="addNodeChild()">Añade un nombre</button>
+    </section>
+    <h2>Ejercio 10</h2>
+    <section id="ej10-result">
+      <form>
+        <label for="ej10-cars"> Selecciona tu cocho
+          <select name="cars" id="ej10-cars" onchange="setCars(this.value)">
+            <option value="volvo" disabled selected>....</option>
+            <option value="f">Ford</option>
+            <option value="s">Seat</option>
+            <option value="c">Citroën</option>
+            <option value="a">Audi</option>
+          </select>
+        </label>
+        <label>Respuesta:
+          <p></p>
+        </label>
+      </form>
+    </section>
+    <h2>Ejercio 11</h2>
+    <section id="ej11-result">
+      <div>
+        <div></div>
+      </div>
+      <button onclick="moveOn()">Move ON</button>
+      <button onclick="stopMove()">Stop</button>
+    </section>
+    <h2>Ejercio 12</h2>
+    <section id="ej12-result">
+      <table>
+        <tr>
+          <th>NAME</th>
+          <th>AGE</th>
+        </tr>
+        <tr>
+          <td>María</td>
+          <td class="age">15</td>
+        </tr>
+        <tr>
+          <td>Moctezuma</td>
+          <td class="age">23</td>
+        </tr>
+        <tr>
+          <td>Fili</td>
+          <td class="age">80</td>
+        </tr>
+        <tr>
+          <td>Margarita</td>
+          <td class="age">10</td>
+        </tr>
+      </table>
+      <button>Calc Average</button>
+      <p></p>
+    </section>
+    <h2>Ejercio 13</h2>
+    <section id="ej13-result">
+      <form action="">
+        <label for="int1">
+          <input type="number" id="int1">
+        </label>
+        <label for="int2">
+          <input type="number" id="int2">
+        </label>
+        <label for="calc">
+          <select name="operator" id="calc" onchange="setOperation(this.value)">
+            <option disabled selected>....</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="%">/</option>
+          </select>
+        </label>
+        <label for="resultado">
+          <p id="resultado"></p>
+        </label>
+      </form>
+    </section>
+    <h2>Ejercio 14</h2>
+    <section id="ej14-result">
+      <form id="deporteForm">
+        <label for="nombre">Nombre del usuario:
+          <input type="text" id="nombre" required>
+        </label>
+        <label for="edad">Edad:
+          <input type="number" id="edad" required>
+        </label>
+        <label for="deporte">Deporte que practica:
+          <select id="deporte" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="futbol">Fútbol</option>
+            <option value="baloncesto">Baloncesto</option>
+            <option value="natacion">Natación</option>
+            <option value="tenis">Tenis</option>
+            <option value="ciclismo">Ciclismo</option>
+            <option value="otros">Otros</option>
+          </select>
+        </label>
+        <label for="colorCamiseta">Color de la camiseta del club:
+          <input type="color" id="colorCamiseta" required>
+        </label>
+
+        <label for="fechaInicio">Fecha desde la que practica el deporte:
+          <input type="date" id="fechaInicio" required>
+        </label>
+      </form>
+      <button onclick="childrenInformation()">Enviar</button>
+    </section>
+    <ul></ul>
+  </main>
+  <script src="../js/ej8.js"></script>
+</body>
+</html>
